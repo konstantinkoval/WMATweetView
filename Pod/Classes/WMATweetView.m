@@ -584,7 +584,7 @@
 
 - (NSString *)description
 {
-	return [NSString stringWithFormat:@"%@,\n  indexes: { start: %d, end: %d, startWithOffset: %d, endWithOffset: %d }", [super description], self.start, self.end, self.startWithOffset, self.endWithOffset];
+	return [NSString stringWithFormat:@"%@,\n  indexes: { start: %lu , end: %lu, startWithOffset: %lu, endWithOffset: %lu }", [super description], (unsigned long)self.start, (unsigned long)self.end, (unsigned long)self.startWithOffset, (unsigned long)self.endWithOffset];
 }
 
 @end
